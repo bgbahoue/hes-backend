@@ -14,10 +14,12 @@
 // LIBRARY IMPORTS
 // =======================================================================
 extern crate amiwo;
-extern crate hyper;
 #[allow(unused_imports)] #[macro_use] extern crate log;
 extern crate rocket;
 #[macro_use] extern crate serde_json;
+
+#[cfg(test)]
+extern crate hyper;
 
 mod routes;
 
