@@ -1,0 +1,23 @@
+[package]
+name = "hes_backend"
+version = "0.1.0"
+authors = ["Boris <boris@humanenginuity.com>"]
+
+[dependencies]
+log = "0.3.7"
+rocket = "0.2.7"
+rocket_codegen = "0.2.7"
+serde_json = "1.0"
+
+[dependencies.amiwo]
+version = "0.2"
+features = ["all"]
+
+[dependencies.rocket_contrib]
+version = "0.2.7"
+default-features = false
+features = ["handlebars_templates", "tera_templates"]
+
+[dev-dependencies]
+hyper = "0.10"
+rocket = { version = "0.2.7", features = ["testing"] }

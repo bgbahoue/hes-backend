@@ -1,0 +1,27 @@
+# The certificate/private key pair used here was generated via openssl:
+#
+#     openssl req -x509 -newkey rsa:4096 -nodes -sha256 -days 3650 \
+#         -keyout key.pem -out cert.pem
+#
+# The certificate is self-signed. As such, you will need to trust it directly
+# for your browser to refer to the connection as secure. You should NEVER use
+# this certificate/key pair. It is here for DEMONSTRATION PURPOSES ONLY.
+[global.tls]
+certs = "keys/ss-demo-cert.pem"
+key = "keys/ss-demo-key.pem"
+
+[global]
+workers = 8
+port = 9876
+
+[development]
+address = "localhost"
+log = "normal"
+
+[staging]
+address = "0.0.0.0"
+log = "normal"
+
+[production]
+address = "0.0.0.0"
+log = "critical"
