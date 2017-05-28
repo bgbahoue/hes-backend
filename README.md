@@ -10,4 +10,4 @@ As per current configuration (see [Rocket.toml](Rocket.toml) file) it creates a 
 
 ## Available routes
 - **GET @ /test/back/hello** > returns a ResponseJSON which data is a {message: "Hello world"} JSON
-- **POST @ /test/back/echo @ CT: Form or JSON** > accepts a 'echo' String inputs and returns a ResponseJSON which data is a { message: "Hello world", echo: "I received from you > [your string]"} JSON
+- **POST @ /test/back/echo @ CT: Form or JSON** > accepts a 'echo' String input and returns a ResponseJSON which data is a { message: "Hello world", echo: "I received from you > [your string]"} JSON
